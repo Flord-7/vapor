@@ -1,0 +1,351 @@
+/* Pagina de LOGIN */
+.container {
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.container #forma-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(17, 32, 39);
+}
+
+.container #forma-login form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 66, 78);
+    padding: 10px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.container #forma-login form img {
+    margin: auto;
+}
+.info-login {
+    height: 50px;
+    margin-top: 15px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+.coluna input {
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #F2F2F2;
+    padding-left: 10px;
+}
+#botao-login{
+    height: 50px;
+    margin-top: 10px;
+    color: rgba(242, 242, 242, 1);
+    background-color: rgb(17, 32, 39);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#botao-login:hover {
+    background-color: rgba(51, 134, 127, 1);
+    transition: 800ms;
+}
+
+.error-message {
+    background-color: #e48b92;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 50px;
+    color: #7a000c;
+}
+
+
+/* start container-pai */
+#container-pai{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(17, 32, 39);
+}
+#sub_container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#cabecalho #nome  {
+    color: rgb(255, 255, 255, 1);
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+#cabecalho #mensagem{
+    color: rgb(255, 255, 255, 1);
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 10px;
+    
+}
+#cabecalho {
+    background-color:  rgb(17, 32, 39);
+    height: 50px;
+    box-shadow: rgba(100, 140, 158, 1);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+}
+/* end container-pai */
+
+
+/* side_menu */
+#side_menu {
+    background-color: rgb(17, 32, 39);
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+#side_menu a {
+    text-decoration: none;
+}
+#side_menu #menu_img {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#side_menu #menu_img img{
+    width: 50px;
+    height: 50px;
+}
+.itens {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.itens:hover{
+    background-color: #3b454e;
+    font-weight: 600;
+    transition: 500ms;
+}
+.itens span {
+    padding-left: 5px;
+    color: rgb(255, 255, 255);
+}
+/* end side_menu */
+.pagina{
+    width: 100%;
+    padding: 15px;   
+}
+
+/* Botão da Tabela  */
+
+.botao{
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    padding: 10px 10px 0 0;
+    
+}
+
+.botao .botao-interno:hover{
+    color: #FFF;
+    background-color: #3b454e;
+    transition: 700ms;
+}
+
+.botao .botao-interno{
+    background-color: rgb(41, 219, 204);
+    height: 35px;
+    color: rgb(37, 43, 78);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+ 
+  /* Criação da Tabela */
+  .tabela{
+    padding: 0 5px 0 0 ;
+  }
+
+.tabela table{
+    margin-top: 30px;
+    width: 100%;
+}
+.tabela table th {
+    height: 50px;
+    text-align: center;
+    background-color: rgb(41, 219, 204);
+    color: rgba(0, 0, 0, 1);
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.tabela table tr {
+    height: 50px;
+    text-align: left;
+}
+.tabela table td{
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.tabela table .intro{
+    text-align: center;
+}
+.tabela table .icons{
+    background-color: #fff;
+    text-align: center;
+}
+.tabela table .icons img{
+    width: 20px;
+    height: 20px;
+}
+.tabela table .icons:hover {
+    background-color: rgb(41, 219, 204);
+    transition: 700ms;
+    
+}
+#container-novo{
+    width: 100%;
+    padding: 10px;
+}
+/* novo-idioma */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.formulario label{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 0 5px 10px;
+}
+.formulario input{
+    width: 180px;
+    height: 30px;
+    border-radius: 50px;
+}
+.form-botao{
+    padding: 0 0 0 10px;
+}
+.action-button{
+    background-color: rgb(32, 177, 165);
+    border: none;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+.action-button:hover{
+    color: #FFF;
+    background-color: #3b454e;
+    transition: 700ms;
+}
+
+.pagina table .icons a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    transition: 200ms all;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.pagina table .icons a:hover{
+    color: blue;
+    
+}
+/* viziualizar-mensagem */
+#total-visualizar{
+    width: 50%;
+    height: auto;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    background-color: #586572;
+    padding: 15px 0 15px 15px;
+    border-radius: 5px;
+}
+#total-visualizar .mensagem{
+    color: #FFF;
+    padding: 0  10px 0 0 ;
+}
+#total-visualizar .mensagem .label{
+    width: 250px;
+    height: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;    
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: rgb(41, 219, 204);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+.phpmensagem{
+    padding-top: 5px;
+    border-radius: 5px; 
+    letter-spacing: 1px;
+    padding-left: 5px;
+    color: rgb(0, 0, 0);
+    width: 250px;
+    height: 30px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+#total-visualizar .mensagem textarea{
+    width: 100%;
+    resize: none;
+    border-radius: 10px;
+    height: auto;
+    border: none;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+/* fim da viziualizar-mensagem  */
+/* mensagem.php */
+#comm{
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+    
+}
+#not-found{
+    color: #FFF;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
