@@ -23,7 +23,7 @@ $jogos = mysqli_query($conn, $query_jogos);
       <td class="icons"><a href="editar-idiomas-jogos.php?id=<?=$jogo['id'] ?>"><img src="./public/editar.png" alt="Editar"></a></td>
       <td class="icons"><a href="editar-plataformas-jogos.php?id=<?=$jogo['id'] ?>"><img src="./public/editar.png" alt="Editar"></a></td>
       <td class="icons" ><a href="editar-jogo.php?id=<?= $jogo['id'] ?>"><img src="./public/editar.png" alt="Editar"></a></td>
-      <td class="icons" ><a href="excluir-jogo.php?id=<?= $jogo['id'] ?>"><img src="./public/lixeira.png" alt="Excluir"></a></td>
+      <td class="icons" ><a onclick="excluirjogo(<?= $jogo['id'] ?>)" href="#"><img src="./public/lixeira.png" alt="Excluir"></a></td>
     </tr>
     <?php } ?>
 

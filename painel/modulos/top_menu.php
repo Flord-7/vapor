@@ -12,6 +12,7 @@ require('conexao.php');
     <link rel="stylesheet" href="assets/global.css">
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/scripts.js"></script>
     <title>Vapor - Dashboard</title>
 </head>
 <body>
