@@ -38,7 +38,7 @@ $error_message = $_GET['error'] ?? null;
                 <?php if($error_message != null) { ?>
                     <div  class="error-message" id= "erro-mensagem" ><?=$error_message?></div>
                 <?php } ?>
-            </form>
+            </form> 
         </div>
     </div>
 </body>

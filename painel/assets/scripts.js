@@ -24,7 +24,7 @@ function removerElementoPorId(idElemento){
 
 
 
-function obterHoraAtual(){
+function obterDataHoraAtual(){
   const data = new Date()
   let hora = data.getHours()
   let minuto = data.getMinutes()
@@ -53,7 +53,22 @@ function obterHoraAtual(){
   return dataAtual
 }
 
-let dataHora = obterHoraAtual()
-console.log(dataHora)
+function updateClock(){
+  const clock = document.getElementById('clock')
+
+  clock.innerHTML = obterDataHoraAtual()
+
+  setInterval(function (){
+    clock.innerHTML = obterDataHoraAtual()
+  },1000)
+}
+
+function Math.random('1,3'){
+
+}
+
+// https://acervolima.com/como-gerar-um-numero-aleatorio-em-determinado-intervalo-usando-javascript/
+
+
 
 

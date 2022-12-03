@@ -92,6 +92,8 @@
     font-size: 25px;
     font-weight: bolder;
     padding-left: 10px;
+    display: flex;
+    flex-direction: row;
     
 }
 #cabecalho {

@@ -1,5 +1,5 @@
-<?php 
-require('autenticacao.php');  
+<?php
+require('autenticacao.php');
 require('conexao.php');
 ?>
 
@@ -15,12 +15,18 @@ require('conexao.php');
     <script src="assets/scripts.js"></script>
     <title>Vapor - Dashboard</title>
 </head>
+
 <body>
     <div id="container-pai">
-        <?php require ('side_menu.php'); ?>
+        <?php require('side_menu.php'); ?>
 
-        <div id="sub_container">            
+        <div id="sub_container">
             <div id="cabecalho">
                 <div id="nome">Dashboard</div>
-                <div id="mensagem">Seja Bem Vindo, Victor!</div>
+                    <div id="mensagem">Seja Bem Vindo, Victor! - <div id="clock"> </div>
+                </div>
             </div>
+
+            <script>
+                updateClock()
+            </script>
