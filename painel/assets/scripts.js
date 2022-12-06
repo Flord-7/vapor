@@ -63,9 +63,58 @@ function updateClock(){
   },1000)
 }
 
-function Math.random('1,3'){
+// function numberAleatorio(max){
+//   return Math.floor(Math.random() * max)
+// }
+// function colorAleatorio(){
+//   let numeroAleatorio = numberAleatorio(3)
+//   let azul = "0"
+//   let vermelho = "1"
+//   let amarelo = "2"
 
+//   if(numeroAleatorio == azul){
+//     document.getElementById('mensagem').style.color = "blue"
+//     document.getElementById('nome').style.color = "blue"
+
+//   }
+  
+//   if(numeroAleatorio == vermelho){
+//     document.getElementById('mensagem').style.color = "red"
+//     document.getElementById('nome').style.color = "red"
+
+//   }
+  
+//   if(numeroAleatorio == amarelo){
+//     document.getElementById('mensagem').style.color = "yellow"
+//     document.getElementById('nome').style.color = "yellow"
+//   }
+// }
+
+// function atualizarCor(){
+//   setInterval(function(){
+//     colorAleatorio()
+//   }, 1000 )
+// }
+
+
+function cor_aleatoria(){
+  const r = Math.floor(Math.random() * 256)
+  const g = Math.floor(Math.random() * 256)
+  const b = Math.floor(Math.random() * 256)
+  const cor = "rgb(" + r + "," + g + "," + b + ")"
+
+  document.getElementById("nome").style.color = cor
+  document.getElementById("mensagem").style.color = cor
 }
+function iniciar_mudanca_de_cor(){
+  setInterval(cor_aleatoria, 1000)
+}
+
+function transformar_texto_maiusculo(elemento){
+  let valor_que_usuario_digitou = elemento.value
+  elemento.value = (valor_que_usuario_digitou.toUpperCase())
+}
+
 
 // https://acervolima.com/como-gerar-um-numero-aleatorio-em-determinado-intervalo-usando-javascript/
 

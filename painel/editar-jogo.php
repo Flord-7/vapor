@@ -20,7 +20,7 @@ $jogo = mysqli_fetch_assoc(mysqli_query($conn, $query_jogo));
     <input type="hidden" name="id_jogo" value="<?=$id_jogo?>">
 
     <label for="nome">Novo jogo:</label>
-    <input type="text" required name="nome" value="<?=$jogo['nome']?>"><br>
+    <input type="text" required name="nome"  value="<?=$jogo['nome']?>" onkeyup="transformar_texto_maiusculo(this)"><br>
 
     <label for="preco">Valor: R$</label>
     <input required type="number" name="preco"  min="0.00" value="<?=$jogo['valor']?>" ><br>

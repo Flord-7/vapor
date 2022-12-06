@@ -14,7 +14,7 @@ $categorias = mysqli_query($conn, $query_categoria);
 <form action="cadastrar-jogo.php" method="POST">
   <div class="formulario">
     <label for="nome">Novo jogo:</label>
-    <input type="text" required name="nome" value=""><br>
+    <input type="text" required name="nome" onkeyup="transformar_texto_maiusculo(this)" value=""><br>
 
     <label for="preco">Valor: R$</label>
     <input required type="number" name="preco"  min="0.00"><br>
