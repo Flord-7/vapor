@@ -9,7 +9,7 @@ $error_message = $_GET['error'] ?? null;
 <form action="cadastrar-categoria.php" method="POST">
   <div class="formulario">
     <label for="nome">Novo categoria</label>
-    <input onfocus="removerElementoPorId('erro-mensagem')" type="text" name="nome" value=""><br>
+    <input onkeyup="transformar_texto_maiusculo(this)" onfocus="removerElementoPorId('erro-mensagem')" type="text" name="nome" value=""><br>
   </div>
 
   <?php if($error_message != null) { ?>

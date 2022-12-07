@@ -9,7 +9,7 @@ $error_message = $_GET['error'] ?? null;
 <form action="cadastrar-plataforma.php" method="POST">
   <div class="formulario">
     <label for="tex">Novo plataforma</label>
-    <input type="text" name="nome" value=""><br>
+    <input onkeyup="apenas_pri_letra(this)" type="text" name="nome" value=""><br>
   </div>
 
   <?php if($error_message != null) { ?>

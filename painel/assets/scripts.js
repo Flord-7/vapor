@@ -116,6 +116,12 @@ function transformar_texto_maiusculo(elemento){
 }
 
 
+function apenas_pri_letra(elemento){
+  const valor_do_usuario = elemento.value
+  elemento.value = valor_do_usuario[0].toUpperCase() + valor_do_usuario.slice(1).toLowerCase()
+}
+
+
 // https://acervolima.com/como-gerar-um-numero-aleatorio-em-determinado-intervalo-usando-javascript/
 
 

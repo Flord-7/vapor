@@ -11,7 +11,7 @@
 <form action="atualizar-plataforma.php" method="POST">
   <div class="formulario">
     <label for="plataforma">plataforma</label>
-    <input type="text" id="plataforma" name="plataforma" value="<?=$plataforma['nome']?>">
+    <input onkeyup="apenas_pri_letra(this)" type="text" id="plataforma" name="plataforma" value="<?=$plataforma['nome']?>">
     <input value="<?=$id_plataforma?>" name="id" type="hidden" >
     <br>
   </div>

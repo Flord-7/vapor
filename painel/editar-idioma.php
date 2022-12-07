@@ -11,7 +11,7 @@
 <form action="atualizar-idioma.php" method="post">
   <div class="formulario">
     <label for="idioma">Idioma</label>
-    <input  value="<?=$idioma['nome']?>" type="text" id="idioma" name="idioma" >
+    <input onkeyup="apenas_pri_letra(this)" value="<?=$idioma['nome']?>" type="text" id="idioma" name="idioma" >
     <input value="<?=$id_idioma?>" name="id" type="hidden">
     <br>
   </div>

@@ -11,7 +11,7 @@
 <form action="atualizar-categoria.php" method="POST">
   <div class="formulario">
     <label for="categoria">categoria</label>
-    <input type="text" id="categoria" name="categoria" value="<?=$categoria['nome']?>">
+    <input onkeyup="transformar_texto_maiusculo(this)" type="text" id="categoria" name="categoria" value="<?=$categoria['nome']?>">
     <input value="<?=$id_categoria?>" name="id" type="hidden">
     <br>
   </div>

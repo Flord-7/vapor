@@ -9,7 +9,7 @@ $error_message = $_GET['error'] ?? null;
 <form action="cadastrar-idioma.php" method="POST">
   <div class="formulario">
     <label for="tex">Novo Idioma</label>
-    <input onfocus="removerElementoPorId('erro-mensagem')" type="text" name="nome" value=""><br>
+    <input onkeyup="apenas_pri_letra(this)" onfocus="removerElementoPorId('erro-mensagem')" type="text" name="nome" value=""><br>
   </div>
 
   <?php if($error_message != null) { ?>
